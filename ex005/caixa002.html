@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping group</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .links{
+            background-color: white;
+            margin: 2px;
+            padding: 10px;
+            box-shadow: 7px 3px 2px rgba(0, 0, 0, 0.529);
+        }
+
+        .texto{
+            background-color: rgb(78, 78, 78);
+            border: 10px solid;
+            border-color: white;
+            margin: 10px;
+            border-radius: 30px 0px;
+            box-shadow: 3px 3px 5px black;
+        }
+
+        div > #escritor{
+            background-color: rgb(63, 51, 51);
+        }
+
+        #desenvolvedor{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+
+        #desenvolvedor > p{
+            margin: 0px;
+        }
+
+         .links > a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        links:hover > a{
+            color: red;
+            text-decoration: underline;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <h1>Meu Site</h1>
+    
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    
+    <div class="texto">
+        <h2>Lorem</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus autem labore officia vel, consectetur, architecto amet ducimus tempora minus perspiciatis velit excepturi tenetur eius eum! Harum laudantium numquam distinctio quas!</p>
+        <p id="escritor">Escrito por Sténio Gaspar</p>
+    </div>
+   <p id="desenvolvedor">Desenvolvido pelo Sténio Gaspar</p>
+   <div id="bola"></div>
+</body>
+</html>
