@@ -45,6 +45,7 @@ header{
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
     min-height: 150px;
     text-align: center;
+    padding-top: 40px;
 }
 
 header > h1{
@@ -101,7 +102,7 @@ main{
 }
 
 main img{
-    width: 100%;
+    width: 80%;
 }
 
 main img.pequena{
