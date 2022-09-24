@@ -18,11 +18,26 @@
             margin: auto;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 15px;
+            background-color: #505050;
+            color: white;
         }
 
         td,th{
             border: 1px solid black;
-            padding: 10px;
+            padding: 15px;
+        }
+
+        thead >tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         thead,tfoot{
@@ -33,15 +48,24 @@
         td.numero{
             text-align: right;
         }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>Tabela da População de cada estado do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,10 +180,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>4.000.000.000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime et animi, illum in ex, laboriosam quam eius hic accusamus commodi dolorem assumenda nulla voluptatum sapiente temporibus aperiam eveniet voluptatem soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione delectus eligendi sunt beatae placeat eos sint quidem nulla reiciendis consectetur accusantium excepturi nostrum architecto vitae explicabo quas, recusandae porro! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, consequuntur necessitatibus aliquam architecto atque quas sunt? Itaque vero dolorum sit, odit ea quas, reiciendis asperiores hic commodi nihil voluptatum? Maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores suscipit aspernatur repellendus. Excepturi itaque culpa distinctio. Doloribus tempore et id, fugit itaque soluta recusandae, magni incidunt minima ea, labore a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, deleniti ducimus aut dicta, a dolorem illo cupiditate laboriosam, est odit animi dignissimos libero ipsum minima quo commodi assumenda reiciendis quis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime et animi, illum in ex, laboriosam quam eius hic accusamus commodi dolorem assumenda nulla voluptatum sapiente temporibus aperiam eveniet voluptatem soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione delectus eligendi sunt beatae placeat eos sint quidem nulla reiciendis consectetur accusantium excepturi nostrum architecto vitae explicabo quas, recusandae porro! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, consequuntur necessitatibus aliquam architecto atque quas sunt? Itaque vero dolorum sit, odit ea quas, reiciendis asperiores hic commodi nihil voluptatum? Maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores suscipit aspernatur repellendus. Excepturi itaque culpa distinctio. Doloribus tempore et id, fugit itaque soluta recusandae, magni incidunt minima ea, labore a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, deleniti ducimus aut dicta, a dolorem illo cupiditate laboriosam, est odit animi dignissimos libero ipsum minima quo commodi assumenda reiciendis quis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime et animi, illum in ex, laboriosam quam eius hic accusamus commodi dolorem assumenda nulla voluptatum sapiente temporibus aperiam eveniet voluptatem soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione delectus eligendi sunt beatae placeat eos sint quidem nulla reiciendis consectetur accusantium excepturi nostrum architecto vitae explicabo quas, recusandae porro! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, consequuntur necessitatibus aliquam architecto atque quas sunt? Itaque vero dolorum sit, odit ea quas, reiciendis asperiores hic commodi nihil voluptatum? Maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores suscipit aspernatur repellendus. Excepturi itaque culpa distinctio. Doloribus tempore et id, fugit itaque soluta recusandae, magni incidunt minima ea, labore a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, deleniti ducimus aut dicta, a dolorem illo cupiditate laboriosam, est odit animi dignissimos libero ipsum minima quo commodi assumenda reiciendis quis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime et animi, illum in ex, laboriosam quam eius hic accusamus commodi dolorem assumenda nulla voluptatum sapiente temporibus aperiam eveniet voluptatem soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione delectus eligendi sunt beatae placeat eos sint quidem nulla reiciendis consectetur accusantium excepturi nostrum architecto vitae explicabo quas, recusandae porro! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, consequuntur necessitatibus aliquam architecto atque quas sunt? Itaque vero dolorum sit, odit ea quas, reiciendis asperiores hic commodi nihil voluptatum? Maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores suscipit aspernatur repellendus. Excepturi itaque culpa distinctio. Doloribus tempore et id, fugit itaque soluta recusandae, magni incidunt minima ea, labore a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, deleniti ducimus aut dicta, a dolorem illo cupiditate laboriosam, est odit animi dignissimos libero ipsum minima quo commodi assumenda reiciendis quis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime et animi, illum in ex, laboriosam quam eius hic accusamus commodi dolorem assumenda nulla voluptatum sapiente temporibus aperiam eveniet voluptatem soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ratione delectus eligendi sunt beatae placeat eos sint quidem nulla reiciendis consectetur accusantium excepturi nostrum architecto vitae explicabo quas, recusandae porro! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, consequuntur necessitatibus aliquam architecto atque quas sunt? Itaque vero dolorum sit, odit ea quas, reiciendis asperiores hic commodi nihil voluptatum? Maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores suscipit aspernatur repellendus. Excepturi itaque culpa distinctio. Doloribus tempore et id, fugit itaque soluta recusandae, magni incidunt minima ea, labore a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, deleniti ducimus aut dicta, a dolorem illo cupiditate laboriosam, est odit animi dignissimos libero ipsum minima quo commodi assumenda reiciendis quis.</p>
 </body>
 </html>
