@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-image: linear-gradient(to top, white, blue);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.box{
+    margin: auto;
+    width: 450px;
+    background-color: white;
+}
+
+div.box > h2{
+    margin-top: 30px;
+}
+
+p.link{
+    padding: 10px;
+    width: 100px;
+    background-color: green;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 50px;
+    display: inline-flex;
+}
+
+p#no{
+    background-color: red;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}

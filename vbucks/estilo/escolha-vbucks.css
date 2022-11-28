@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-image: linear-gradient(to top, white, blue);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: aqua;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+div.card{
+    width: 200px;
+    height: 30vh;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: royalblue;
+    float: left;
+    margin-left: 20px;
+}
+
+div.card h3,h4{
+    margin-top: 20px;
+    text-align: center;
+    color: deepskyblue;
+}
+
+div.card h3::before{
+    display: block;
+    height: 2px;
+    width: 200px;
+    content: '';
+    background-color: darkblue;
+    color: white;
+}
+
+p.img{
+    text-align: center;
+}
+
+p.img > img{
+    width: 35%;
+}
